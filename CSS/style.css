@@ -1,0 +1,535 @@
+:root {
+  --color-black: #252a34;
+  --color-grey: #757575;
+  --color-light-grey: #9e9e9e;
+  --color-white: #ffffff;
+  --color-dark-white: #bdbdbd;
+  --color-orange: #d93b2f;
+  --color-light-orange: #eb9f21;
+}
+
+body {
+  font-size: 16px;
+  min-width: 1280px;
+}
+
+header {
+  height: 81px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  padding: 14px 0 0;
+}
+
+header h1 a {
+  display: block;
+  width: 110px;
+  height: 48px;
+  color: transparent;
+  background: url(../img/sp_com.png) no-repeat -300px 0;
+}
+
+.lnb ul {
+  display: flex;
+}
+
+.lnb ul .lnb__list a {
+  display: block;
+  height: 81px;
+  line-height: 81px;
+  padding: 0 35px;
+  font-size: 17px;
+  color: #333333;
+}
+
+.lnb ul .lnb__list a:hover {
+  color: #007cc4;
+  font-weight: bold;
+}
+
+.lnb ul .lnb__list a span {
+  position: relative;
+}
+
+.lnb ul .lnb__list a span:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background: #007cc4;
+  transition: transform 0.4s;
+  transform: scaleX(0);
+}
+
+.lnb ul .lnb__list a:hover span:after {
+  transform: scaleX(1);
+}
+
+.lnb:hover .lnb__depth {
+  display: block;
+}
+
+.lnb__depth {
+  display: none;
+  position: absolute;
+  top: 81px;
+  left: 0;
+  width: 100%;
+  height: 230px;
+  background-color: rgba(0,0,0,0.6);
+  box-shadow: 2px 4px 5px rgba(45, 91, 121, 0.2);
+  z-index: 10;
+}
+
+.depth__wrap {
+  display: flex;
+  justify-content: center;
+  transform: translateX(-3.5rem) translateY(0.5rem);
+}
+
+.depth__list {
+  flex-basis: 6.8rem;
+  padding: 10px 15px;
+  flex-direction: column;
+}
+
+.depth__list li {
+  text-align: center;
+}
+
+.depth__list li a {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 500;
+  display: inline-block;
+  padding: 8px 0;
+}
+
+.depth__list li span {
+  position: relative;
+  line-height: 1px;
+}
+
+.depth__list li:hover span:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  z-index: -1;
+  width: 100%;
+  height: 4px;
+  border-radius: 1rem;
+  background: #999;
+}
+
+.spot ul {
+  display: flex;
+}
+
+.spot ul li {
+  position: relative;
+}
+
+.spot ul li:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 10px;
+  background: #ccc;
+}
+
+.spot ul li:first-child:after {
+  display: none;
+}
+
+.spot ul li a {
+  display: block;
+  height: 81px;
+  line-height: 81px;
+  padding: 0 10px;
+}
+
+.spot ul li:last-child a {
+  padding-right: 0;
+}
+
+/* visual */
+
+.visual {
+  position: relative;
+  padding: 0 50px;
+}
+
+.con > div {
+  height: 640px;
+}
+
+.visual.slide {
+  background: url(../img/bg_main02.jpg) no-repeat center;
+  color: #fff;
+}
+
+.visual .txt {
+  position: absolute;
+  left: 50%;
+  top: 175px;
+}
+
+.visual .txt p:nth-child(1){
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.visual p {
+  font-size: 20px;
+  padding: 19px 0 0;
+  line-height: 100%;
+}
+
+
+/* product */
+
+.product a {
+  color: #001829;
+  font-size: 15px;
+  display: block;
+}
+.product a:hover {
+  color: #2d5b79;
+  font-weight: bold;
+}
+
+.product a:before {
+  content: "";
+  display: block;
+  margin: 0 0 26px;
+  width: 64px;
+  height: 52px;
+  background: url(../img/sp_com.png) no-repeat;
+}
+
+.product ul {
+  padding: 46px 0 41px;
+  text-align: center;
+  font-size: 0;
+}
+
+.product li {
+  display: inline-block;
+  padding: 0 55px;
+  text-align: center;
+}
+
+.product li:nth-child(1) a:before {
+  background-position: -3px -118px;
+}
+
+.product li:nth-child(2) a:before {
+  background-position: -75px -118px;
+}
+
+.product li:nth-child(3) a:before {
+  background-position: -148px -118px;
+}
+
+.product li:nth-child(4) a:before {
+  background-position: -219px -118px;
+}
+
+.product li:nth-child(5) a:before {
+  background-position: -292px -118px;
+}
+
+.product li:nth-child(6) a:before {
+  background-position: -364px -118px;
+}
+
+.product li:nth-child(1) a:hover:before {
+  background-position: -3px -184px;
+}
+
+.product li:nth-child(2) a:hover:before {
+  background-position: -75px -184px;
+}
+
+.product li:nth-child(3) a:hover:before {
+  background-position: -148px -184px;
+}
+
+.product li:nth-child(4) a:hover:before {
+  background-position: -219px -184px;
+}
+
+.product li:nth-child(5) a:hover:before {
+  background-position: -292px -184px;
+}
+
+.product li:nth-child(6) a:hover:before {
+  background-position: -364px -184px;
+}
+
+
+
+
+/* slide_box */
+
+.magazine {
+  position: relative; 
+  background: #dfd9d1;
+  height: 670px;
+  overflow: hidden;
+}
+
+.magazine h2 {
+  padding: 50px 0 16px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  line-height: 100%;
+}
+
+.magazine p {
+  text-align: center;
+  font-size: 14px;
+  color: #3a3b36;
+  line-height: 100%;
+}
+
+.magazine .slide_box > div {
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translateX(-50%);
+  width: 1180px; 
+  height: 430px;
+}
+
+.magazine .slide_box > div:nth-child(1) {
+  margin-left: -1280px;
+}
+
+.magazine .slide_box > div:nth-child(3) {
+  margin-left: 1280px;
+}
+
+
+.magazine .slide_box .left {
+  overflow: hidden;
+  position: relative;
+  float: left;
+  width: 800px;
+  height: 430px;
+}
+
+.magazine .slide_box .left img {width: 100%;}
+
+.magazine .slide_box .left div {
+  background:  rgba(0,0,0,0.5);
+  position: absolute;
+  right: 0;
+  top: 0;
+  box-sizing: border-box;
+  width: 200px;
+  height: 100%;
+  padding: 47px 20px 0;
+}
+
+.magazine .slide_box .left div h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.magazine .slide_box .left div h3 span {
+  display: block;
+  font-weight: normal;
+  line-height: 26px;
+  padding: 15px 0 0;
+}
+
+.magazine .slide_box .left div p {
+  padding: 9px 0 0;
+  font-weight: 16px;
+  color: #fff;
+  text-align: left;
+  line-height: 24px;
+}
+
+.magazine .slide_box .left div a {
+  position: absolute;
+  right: 20px;
+  bottom: 40px;
+  display: block;
+  width: 160px;
+  height: 45px;
+  border: 1px solid #fff;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+}
+
+.magazine .slide_box .right {
+  float: right;
+  padding: 20px 20px 0; 
+  width: 380px;
+  height: 430px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.magazine .slide_box .right li {
+  padding: 0 0 20px;
+}
+
+.magazine .slide_box .right li a {
+  display: table;
+  width: 100%;
+}
+
+.magazine .slide_box .right li a div {
+  display: table-cell;
+  height: 82px;
+  position: relative;
+  padding: 0 0 0 100px;
+  font-size: 16px;
+  color: #333;
+  vertical-align: middle;
+}
+
+.magazine .slide_box .right li a img {
+  width: 80px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.magazine .slide_box .right li a strong {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #000;
+}
+
+.magazine.slide .control {
+  bottom: 48px;
+}
+
+.magazine.slide .prev {
+  left: 50%; 
+  margin: 26px 0 0 -640px; 
+}
+
+.magazine.slide .next {
+  right: 50%;
+  margin: 26px -640px 0 0; 
+}
+
+
+/* slide */
+
+.slide .prev,
+.slide .next {
+  display: block;
+  width: 25px;
+  height: 47px;
+  background: url(../img/sp_com.png) no-repeat center;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: transparent; 
+}
+
+.slide .prev {
+  left: 82px;
+  background-position: -128px -60px;
+}
+
+.slide .next {
+  right: 82px;
+  background-position: -158px -60px;
+}
+
+.slide .control {
+  position: absolute;
+  left: 0;
+  bottom: 55px;
+  width: 100%;
+  text-align: center;
+}
+
+.slide .control > div {
+  display: inline-block;
+  position: relative;
+  padding: 0 45px 0 0;
+}
+
+.slide .control > div > div {
+  position: absolute;
+  right: 0;
+}
+
+.slide .control > div > div a {
+  display: inline-block;
+  width: 8px; 
+  height: 9px;
+  overflow: hidden;
+  margin: 0 0 0 3px;
+  opacity: 0.5;
+  background: url(../img/sp_com.png) no-repeat;
+}
+
+.slide .control > div > div a.on {
+  opacity: 1;
+}
+
+.slide .control > div > div a.pause {
+  background-position: -108px -60px;
+}
+
+.slide .control > div > div a.play {
+  background-position: -108px -72px;
+}
+
+.slide .control ul {
+  transform: translateY(-6px);
+  display: inline-block;
+  font-size: 0;
+}
+
+.slide .control ul li {
+  padding: 0 3px;
+  display: inline-block;
+}
+
+.slide .control ul li a{
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: rgba(255,255,255,0.5);
+  border: none;
+}
+
+.slide .control ul li.on a{
+  background: #fff;
+}
+
+.slide .control a {
+  color: transparent;
+}
+
+
+
