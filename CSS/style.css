@@ -636,6 +636,167 @@ header h1 a {
   top: 0;
 }
 
+/* banner */
+
+.banner {
+  padding: 55px 0;
+  background: url(../img/bg_main_business.jpg) no-repeat center top;
+}
+
+.banner ul {
+  display: flex;
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.banner ul li {
+  flex: 1;
+  padding: 0 0 0 20px;
+}
+
+.banner ul li:first-child { padding: 0; }
+
+.banner ul li a {
+  display: block;
+  padding: 300px 0 0;
+  font-size: 14px;
+  color: #3e413d;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.banner ul li a strong {
+  display: block;
+  font-size: 23px;
+  color: #000;
+  margin: 20px 0 20px 0;
+}
+
+.banner ul li:nth-child(1) a {background: url(../img/thumb_view1.jpg) no-repeat;}
+.banner ul li:nth-child(2) a {background: url(../img/thumb_view2.jpg) no-repeat;}
+.banner ul li:nth-child(3) a {background: url(../img/thumb_view3.jpg) no-repeat;}
+.banner ul li:nth-child(4) a {background: url(../img/thumb_view4.jpg) no-repeat;}
+
+footer .top { 
+  background: #383f43;
+}
+
+footer .top > .layout {
+  width: 1180px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .top > .layout > ul.top_footer {
+  display: flex;
+  align-items: center;
+} 
+
+footer .top > .layout ul.top_footer li {
+  position: relative;
+  padding: 0 19px 0 0;
+}
+
+footer .top > .layout > ul.top_footer > li:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  margin-top: -5px;
+  width: 1px;
+  height: 10px;
+  background: #70767a;
+}
+
+footer .top > .layout > ul.top_footer > li:last-child:after {
+  display: none;
+}
+
+footer .top > .layout > div {
+  display: flex;
+  align-items: center;
+}
+
+footer .top > .layout > div > p {
+  background: #2a3033;
+  font-size: 13px;
+  width: 242px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+}
+
+footer .top > .layout > div > p strong {
+  padding: 0 0 0 15px;
+  font-size: 20px;
+}
+footer .top > .layout > div > select {
+  border: none;
+  padding: 0 0 0 21px;
+  width: 200px;
+  height: 43px;
+  color: #191919;
+  font-size: 12px;
+  box-sizing: border-box;
+  vertical-align: 3px;
+}
+
+footer .btm {
+  padding: 40px 0 44px; 
+  background: #4c5459;
+  text-align: center;
+}
+
+footer .btm > p {
+  display: inline-block;
+  width: 131px;
+  height: 51px;
+  background: url(../img/sp_com.png) no-repeat -150px 0;
+}
+footer .btm ul {
+  padding: 32px 0 14px;
+}
+
+footer .btm ul li {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 14px;
+}
+
+footer .btm ul li:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -3px;
+  top: 50%;
+  margin-top: -5px;
+  width: 1px;
+  height: 10px;
+  background: #70767a;
+}
+
+footer .btm ul li:first-child:after {
+  display: none;
+}
+
+footer .btm address {
+  font-size: 14px;
+}
+
+footer .top > div a,
+footer .top > div p,
+footer .top > div li,
+footer .top > div address {
+  color: #fff;
+}
+
+
+
 
 /* slide */
 
